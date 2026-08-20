@@ -28,6 +28,7 @@
       align-items: center;
       position: sticky;
       top: 0;
+      z-index: 1000;
     }
 
     nav h2 {
@@ -82,6 +83,10 @@
       border-radius: 6px;
     }
 
+    .btn:hover {
+      background: #075985;
+    }
+
     section {
       max-width: 1000px;
       margin: auto;
@@ -105,6 +110,14 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     }
 
+    .card h3 {
+      color: #0f172a;
+    }
+
+    .card a {
+      color: #0369a1;
+    }
+
     ul {
       padding-left: 22px;
     }
@@ -123,14 +136,20 @@
 
       nav div {
         margin-top: 10px;
+        text-align: center;
       }
 
       nav a {
-        margin: 8px;
+        display: inline-block;
+        margin: 5px 8px;
       }
 
       header h1 {
         font-size: 38px;
+      }
+
+      header h2 {
+        font-size: 20px;
       }
     }
   </style>
@@ -138,6 +157,7 @@
 
 <body>
 
+<!-- Navigation -->
 <nav>
   <h2>MD Sefat</h2>
 
@@ -153,11 +173,15 @@
 </nav>
 
 
+<!-- Home -->
 <header>
   <div>
+
     <h1>MD SEFAT</h1>
 
-    <h2>Master of Data Science Student | Aspiring Machine Learning Researcher</h2>
+    <h2>
+      Master of Data Science Student | Aspiring Machine Learning Researcher
+    </h2>
 
     <p>
       I am a Master of Data Science student at Macquarie University,
@@ -165,16 +189,21 @@
       health data analytics and data-driven decision making.
     </p>
 
-    <a class="btn" href="#research">Explore My Research Interests</a>
+    <a class="btn" href="#research">
+      Explore My Research Interests
+    </a>
+
   </div>
 </header>
 
 
+<!-- About -->
 <section id="about">
 
   <h2>About Me</h2>
 
   <div class="card">
+
     <p>
       I am currently studying a Master of Data Science at Macquarie University
       in Sydney, Australia. I previously completed a Bachelor of Science in
@@ -191,24 +220,29 @@
       research and contribute to solving real-world problems using data science
       and artificial intelligence.
     </p>
+
   </div>
 
 </section>
 
 
+<!-- Research -->
 <section id="research">
 
   <h2>Research Interests</h2>
 
   <div class="card">
+
     <ul>
-      <li>Machine Learning applications in Public Health</li>
+      <li>Machine Learning Applications in Public Health</li>
       <li>Disease Risk Prediction</li>
       <li>Predictive Modelling and Health Data Analytics</li>
       <li>Artificial Intelligence in Healthcare</li>
-      <li>Data-driven Decision Support Systems</li>
+      <li>Data-Driven Decision Support Systems</li>
     </ul>
+
   </div>
+
 
   <div class="card">
 
@@ -234,6 +268,7 @@
 </section>
 
 
+<!-- Education -->
 <section id="education">
 
   <h2>Education</h2>
@@ -252,9 +287,10 @@
 
   </div>
 
+
   <div class="card">
 
-    <h3>BSc in Computer Science and Engineering</h3>
+    <h3>BSc in Computer Science and Engineering (CSE)</h3>
 
     <p>
       American International University-Bangladesh (AIUB)
@@ -265,6 +301,7 @@
 </section>
 
 
+<!-- Projects -->
 <section id="projects">
 
   <h2>Projects & Academic Work</h2>
@@ -272,6 +309,8 @@
   <div class="card">
 
     <h3>Machine Learning and Data Analysis Projects</h3>
+
+    <br>
 
     <p>
       As part of my academic studies, I have worked with Python and R for
@@ -281,9 +320,12 @@
 
   </div>
 
+
   <div class="card">
 
     <h3>Data Science Coursework</h3>
+
+    <br>
 
     <p>
       My coursework includes practical applications of machine learning,
@@ -292,9 +334,12 @@
 
   </div>
 
+
   <div class="card">
 
     <h3>Future Research Project</h3>
+
+    <br>
 
     <p>
       Machine Learning-Based Diabetes Risk Prediction Using Patient Health Data.
@@ -305,6 +350,7 @@
 </section>
 
 
+<!-- Skills -->
 <section id="skills">
 
   <h2>Technical Skills</h2>
@@ -335,7 +381,7 @@
 
     <br>
 
-    <h3>Tools</h3>
+    <h3>Tools & Platforms</h3>
 
     <p>
       Jupyter Notebook, Git and Microsoft Excel
@@ -346,6 +392,7 @@
 </section>
 
 
+<!-- CV -->
 <section id="cv">
 
   <h2>Curriculum Vitae</h2>
@@ -356,7 +403,11 @@
       You can download my academic and research CV below.
     </p>
 
-    <a class="btn" href="MD_Sefat_Research_Resume.pdf" target="_blank">
+    <a
+      class="btn"
+      href="MD_Sefat_Research_Resume.pdf"
+      target="_blank"
+    >
       Download CV
     </a>
 
@@ -365,15 +416,29 @@
 </section>
 
 
+<!-- Contact -->
 <section id="contact">
 
   <h2>Contact</h2>
 
   <div class="card">
 
-    <p><strong>Name:</strong> MD Sefat</p>
+    <p>
+      <strong>Name:</strong>
+      MD Sefat
+    </p>
 
-    <p><strong>Location:</strong> Sydney, Australia</p>
+    <p>
+      <strong>Location:</strong>
+      Sydney, Australia
+    </p>
+
+    <p>
+      <strong>Phone:</strong>
+      <a href="tel:+61416119378">
+        +61 416 119 378
+      </a>
+    </p>
 
     <p>
       <strong>Email:</strong>
@@ -383,8 +448,21 @@
     </p>
 
     <p>
+      <strong>LinkedIn:</strong>
+      <a
+        href="https://www.linkedin.com/in/sefat2a"
+        target="_blank"
+      >
+        linkedin.com/in/sefat2a
+      </a>
+    </p>
+
+    <p>
       <strong>GitHub:</strong>
-      <a href="https://github.com/MdSefat12" target="_blank">
+      <a
+        href="https://github.com/MdSefat12"
+        target="_blank"
+      >
         github.com/MdSefat12
       </a>
     </p>
@@ -394,6 +472,7 @@
 </section>
 
 
+<!-- Footer -->
 <footer>
 
   <p>
