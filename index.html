@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MD Sefat | Academic Website</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background: #f7f9fc;
+    }
+
+    nav {
+      background: #0f172a;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+
+    nav h2 {
+      color: white;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    header {
+      min-height: 75vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+    }
+
+    header h1 {
+      font-size: 52px;
+      color: #0f172a;
+      margin-bottom: 10px;
+    }
+
+    header h2 {
+      color: #0369a1;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      max-width: 750px;
+      margin: auto;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 22px;
+      background: #0369a1;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 70px 25px;
+    }
+
+    section h2 {
+      font-size: 30px;
+      margin-bottom: 25px;
+      color: #0f172a;
+      border-bottom: 3px solid #38bdf8;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    footer {
+      text-align: center;
+      background: #0f172a;
+      color: white;
+      padding: 25px;
+    }
+
+    @media(max-width: 700px) {
+      nav {
+        flex-direction: column;
+      }
+
+      nav div {
+        margin-top: 10px;
+      }
+
+      nav a {
+        margin: 8px;
+      }
+
+      header h1 {
+        font-size: 38px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <h2>MD Sefat</h2>
+
+  <div>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#cv">CV</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+
+<header>
+  <div>
+    <h1>MD SEFAT</h1>
+
+    <h2>Master of Data Science Student | Aspiring Machine Learning Researcher</h2>
+
+    <p>
+      I am a Master of Data Science student at Macquarie University,
+      Sydney, with an interest in machine learning, artificial intelligence,
+      health data analytics and data-driven decision making.
+    </p>
+
+    <a class="btn" href="#research">Explore My Research Interests</a>
+  </div>
+</header>
+
+
+<section id="about">
+
+  <h2>About Me</h2>
+
+  <div class="card">
+    <p>
+      I am currently studying a Master of Data Science at Macquarie University
+      in Sydney, Australia. I previously completed a Bachelor of Science in
+      Computer Science and Engineering from American International
+      University-Bangladesh.
+    </p>
+
+    <br>
+
+    <p>
+      I am at the beginning of my research journey and am actively developing
+      my knowledge of research methodology, machine learning, statistical
+      modelling and data analysis. My long-term goal is to pursue PhD-level
+      research and contribute to solving real-world problems using data science
+      and artificial intelligence.
+    </p>
+  </div>
+
+</section>
+
+
+<section id="research">
+
+  <h2>Research Interests</h2>
+
+  <div class="card">
+    <ul>
+      <li>Machine Learning applications in Public Health</li>
+      <li>Disease Risk Prediction</li>
+      <li>Predictive Modelling and Health Data Analytics</li>
+      <li>Artificial Intelligence in Healthcare</li>
+      <li>Data-driven Decision Support Systems</li>
+    </ul>
+  </div>
+
+  <div class="card">
+
+    <h3>Current Research Direction</h3>
+
+    <br>
+
+    <p>
+      I am particularly interested in exploring how machine learning models
+      can analyse patient and public health data to predict disease risk and
+      support better healthcare decision-making.
+    </p>
+
+    <br>
+
+    <p>
+      One research area I would like to explore is machine learning-based
+      diabetes risk prediction using patient health data.
+    </p>
+
+  </div>
+
+</section>
+
+
+<section id="education">
+
+  <h2>Education</h2>
+
+  <div class="card">
+
+    <h3>Master of Data Science</h3>
+
+    <p>
+      Macquarie University, Sydney, Australia
+    </p>
+
+    <p>
+      Currently Enrolled
+    </p>
+
+  </div>
+
+  <div class="card">
+
+    <h3>BSc in Computer Science and Engineering</h3>
+
+    <p>
+      American International University-Bangladesh (AIUB)
+    </p>
+
+  </div>
+
+</section>
+
+
+<section id="projects">
+
+  <h2>Projects & Academic Work</h2>
+
+  <div class="card">
+
+    <h3>Machine Learning and Data Analysis Projects</h3>
+
+    <p>
+      As part of my academic studies, I have worked with Python and R for
+      data preprocessing, exploratory data analysis, statistical modelling
+      and machine learning.
+    </p>
+
+  </div>
+
+  <div class="card">
+
+    <h3>Data Science Coursework</h3>
+
+    <p>
+      My coursework includes practical applications of machine learning,
+      data analysis, predictive modelling, databases and statistical methods.
+    </p>
+
+  </div>
+
+  <div class="card">
+
+    <h3>Future Research Project</h3>
+
+    <p>
+      Machine Learning-Based Diabetes Risk Prediction Using Patient Health Data.
+    </p>
+
+  </div>
+
+</section>
+
+
+<section id="skills">
+
+  <h2>Technical Skills</h2>
+
+  <div class="card">
+
+    <h3>Programming Languages</h3>
+
+    <p>
+      Python, R, SQL, Java, C#, PHP and JavaScript
+    </p>
+
+    <br>
+
+    <h3>Data Analysis & Machine Learning</h3>
+
+    <p>
+      Pandas, NumPy and scikit-learn
+    </p>
+
+    <br>
+
+    <h3>Web & Software Development</h3>
+
+    <p>
+      HTML, CSS, .NET and PHP Frameworks
+    </p>
+
+    <br>
+
+    <h3>Tools</h3>
+
+    <p>
+      Jupyter Notebook, Git and Microsoft Excel
+    </p>
+
+  </div>
+
+</section>
+
+
+<section id="cv">
+
+  <h2>Curriculum Vitae</h2>
+
+  <div class="card">
+
+    <p>
+      You can download my academic and research CV below.
+    </p>
+
+    <a class="btn" href="MD_Sefat_Research_Resume.pdf" target="_blank">
+      Download CV
+    </a>
+
+  </div>
+
+</section>
+
+
+<section id="contact">
+
+  <h2>Contact</h2>
+
+  <div class="card">
+
+    <p><strong>Name:</strong> MD Sefat</p>
+
+    <p><strong>Location:</strong> Sydney, Australia</p>
+
+    <p>
+      <strong>Email:</strong>
+      <a href="mailto:tanjimsefat12@gmail.com">
+        tanjimsefat12@gmail.com
+      </a>
+    </p>
+
+    <p>
+      <strong>GitHub:</strong>
+      <a href="https://github.com/MdSefat12" target="_blank">
+        github.com/MdSefat12
+      </a>
+    </p>
+
+  </div>
+
+</section>
+
+
+<footer>
+
+  <p>
+    © 2026 MD Sefat | Academic Website
+  </p>
+
+</footer>
+
+</body>
+</html>
