@@ -3,6 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="MD Sefat - Master of Data Science student at Macquarie University with research interests in machine learning, artificial intelligence, health data analytics and predictive modelling."
+  >
+
   <title>MD Sefat | Academic Website</title>
 
   <style>
@@ -13,16 +19,37 @@
       scroll-behavior: smooth;
     }
 
+    :root {
+      --primary: #17324d;
+      --secondary: #2f6f55;
+      --text: #222222;
+      --muted: #5f6772;
+      --background: #f7f8fa;
+      --white: #ffffff;
+      --border: #e1e5ea;
+      --light-green: #eef7f2;
+    }
+
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      color: #222;
-      background: #f7f9fc;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--background);
+    }
+
+    a {
+      color: var(--secondary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     nav {
-      background: #0f172a;
-      padding: 18px 8%;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 7%;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -32,124 +59,259 @@
     }
 
     nav h2 {
-      color: white;
+      color: var(--primary);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+    }
+
+    nav div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
     }
 
     nav a {
-      color: white;
-      text-decoration: none;
+      color: var(--primary);
       margin-left: 20px;
-      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 600;
     }
 
     nav a:hover {
-      color: #38bdf8;
+      color: var(--secondary);
+      text-decoration: none;
     }
 
     header {
-      min-height: 75vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 40px 20px;
-      background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 90px 8% 75px;
+    }
+
+    .header-content {
+      max-width: 950px;
+      margin: auto;
+    }
+
+    .label {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--secondary);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 12px;
     }
 
     header h1 {
       font-size: 52px;
-      color: #0f172a;
-      margin-bottom: 10px;
+      line-height: 1.1;
+      color: var(--primary);
+      margin-bottom: 12px;
     }
 
     header h2 {
-      color: #0369a1;
-      margin-bottom: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #3d4d5c;
+      font-size: 21px;
+      font-weight: 500;
+      margin-bottom: 22px;
     }
 
     header p {
-      max-width: 750px;
-      margin: auto;
+      max-width: 820px;
       font-size: 18px;
+      color: var(--muted);
+    }
+
+    .profile-links {
+      margin-top: 28px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
     }
 
     .btn {
       display: inline-block;
-      margin-top: 25px;
-      padding: 12px 22px;
-      background: #0369a1;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
+      padding: 10px 16px;
+      border-radius: 5px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      border: 1px solid var(--secondary);
     }
 
-    .btn:hover {
-      background: #075985;
+    .btn-primary {
+      background: var(--secondary);
+      color: var(--white);
+    }
+
+    .btn-primary:hover {
+      background: #275c47;
+      text-decoration: none;
+    }
+
+    .btn-secondary {
+      background: var(--white);
+      color: var(--secondary);
+    }
+
+    .btn-secondary:hover {
+      background: var(--light-green);
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 1050px;
+      margin: auto;
+      background: var(--white);
     }
 
     section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 70px 25px;
+      padding: 65px 35px;
+      border-bottom: 1px solid var(--border);
     }
 
     section h2 {
+      color: var(--primary);
       font-size: 30px;
-      margin-bottom: 25px;
-      color: #0f172a;
-      border-bottom: 3px solid #38bdf8;
-      display: inline-block;
-      padding-bottom: 5px;
+      margin-bottom: 28px;
+    }
+
+    section h2::after {
+      content: "";
+      display: block;
+      width: 55px;
+      height: 3px;
+      background: var(--secondary);
+      margin-top: 10px;
+    }
+
+    section h3 {
+      color: var(--primary);
+      font-size: 21px;
+      margin-bottom: 6px;
     }
 
     .card {
-      background: white;
-      padding: 25px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      padding: 24px;
       margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      border-radius: 8px;
     }
 
-    .card h3 {
-      color: #0f172a;
+    .entry {
+      padding: 22px 0;
+      border-top: 1px solid #edf0f3;
     }
 
-    .card a {
-      color: #0369a1;
+    .entry:first-of-type {
+      border-top: none;
+      padding-top: 0;
+    }
+
+    .meta {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .research-grid,
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .research-item,
+    .skill-item {
+      border: 1px solid var(--border);
+      padding: 22px;
+      border-radius: 8px;
+    }
+
+    .research-item h3,
+    .skill-item h3 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
     }
 
     ul {
       padding-left: 22px;
+      margin-top: 10px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .status {
+      display: inline-block;
+      background: var(--light-green);
+      color: var(--secondary);
+      border: 1px solid #cde3d6;
+      border-radius: 20px;
+      padding: 4px 9px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px 30px;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
     footer {
       text-align: center;
-      background: #0f172a;
-      color: white;
+      background: var(--primary);
+      color: var(--white);
       padding: 25px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
     }
 
-    @media(max-width: 700px) {
+    @media(max-width: 750px) {
       nav {
         flex-direction: column;
+        align-items: flex-start;
       }
 
       nav div {
         margin-top: 10px;
-        text-align: center;
+        justify-content: flex-start;
       }
 
       nav a {
-        display: inline-block;
-        margin: 5px 8px;
+        margin: 5px 14px 5px 0;
+      }
+
+      header {
+        padding: 60px 25px;
       }
 
       header h1 {
-        font-size: 38px;
+        font-size: 40px;
       }
 
       header h2 {
-        font-size: 20px;
+        font-size: 18px;
+      }
+
+      section {
+        padding: 50px 22px;
+      }
+
+      .research-grid,
+      .skills-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -159,6 +321,7 @@
 
 <!-- Navigation -->
 <nav>
+
   <h2>MD Sefat</h2>
 
   <div>
@@ -166,18 +329,27 @@
     <a href="#research">Research</a>
     <a href="#education">Education</a>
     <a href="#projects">Projects</a>
+    <a href="#publications">Publications</a>
     <a href="#skills">Skills</a>
     <a href="#cv">CV</a>
     <a href="#contact">Contact</a>
   </div>
+
 </nav>
 
 
-<!-- Home -->
+<!-- Header -->
 <header>
-  <div>
 
-    <h1>MD SEFAT</h1>
+  <div class="header-content">
+
+    <div class="label">
+      Academic Profile
+    </div>
+
+    <h1>
+      MD Sefat
+    </h1>
 
     <h2>
       Master of Data Science Student | Aspiring Machine Learning Researcher
@@ -185,16 +357,56 @@
 
     <p>
       I am a Master of Data Science student at Macquarie University,
-      Sydney, with an interest in machine learning, artificial intelligence,
-      health data analytics and data-driven decision making.
+      Sydney, with research interests in machine learning,
+      artificial intelligence, health data analytics,
+      predictive modelling and data-driven decision support.
+      I am currently developing my research experience with
+      the long-term goal of pursuing higher-degree research
+      in data science and machine learning.
     </p>
 
-    <a class="btn" href="#research">
-      Explore My Research Interests
-    </a>
+    <div class="profile-links">
+
+      <a
+        class="btn btn-primary"
+        href="MD_Sefat_Research_Resume.pdf"
+        target="_blank"
+      >
+        Download Academic CV
+      </a>
+
+      <a
+        class="btn btn-secondary"
+        href="https://orcid.org/0009-0001-5060-1096"
+        target="_blank"
+      >
+        ORCID: 0009-0001-5060-1096
+      </a>
+
+      <a
+        class="btn btn-secondary"
+        href="https://github.com/MdSefat12"
+        target="_blank"
+      >
+        GitHub
+      </a>
+
+      <a
+        class="btn btn-secondary"
+        href="https://www.linkedin.com/in/sefat2a"
+        target="_blank"
+      >
+        LinkedIn
+      </a>
+
+    </div>
 
   </div>
+
 </header>
+
+
+<main>
 
 
 <!-- About -->
@@ -202,65 +414,152 @@
 
   <h2>About Me</h2>
 
-  <div class="card">
+  <p>
+    I am currently studying a Master of Data Science at
+    Macquarie University in Sydney, Australia.
+    I previously completed a Bachelor of Science in
+    Computer Science and Engineering from
+    American International University-Bangladesh.
+  </p>
 
-    <p>
-      I am currently studying a Master of Data Science at Macquarie University
-      in Sydney, Australia. I previously completed a Bachelor of Science in
-      Computer Science and Engineering from American International
-      University-Bangladesh.
-    </p>
+  <br>
 
-    <br>
+  <p>
+    I am at the beginning of my research journey and am
+    actively developing my knowledge of research methodology,
+    machine learning, statistical modelling, data analysis
+    and scientific communication.
+  </p>
 
-    <p>
-      I am at the beginning of my research journey and am actively developing
-      my knowledge of research methodology, machine learning, statistical
-      modelling and data analysis. My long-term goal is to pursue PhD-level
-      research and contribute to solving real-world problems using data science
-      and artificial intelligence.
-    </p>
+  <br>
 
-  </div>
+  <p>
+    My long-term goal is to pursue PhD-level research and
+    contribute to solving real-world problems using
+    data science, machine learning and artificial intelligence.
+  </p>
 
 </section>
 
 
-<!-- Research -->
+<!-- Research Interests -->
 <section id="research">
 
   <h2>Research Interests</h2>
 
-  <div class="card">
+  <div class="research-grid">
 
-    <ul>
-      <li>Machine Learning Applications in Public Health</li>
-      <li>Disease Risk Prediction</li>
-      <li>Predictive Modelling and Health Data Analytics</li>
-      <li>Artificial Intelligence in Healthcare</li>
-      <li>Data-Driven Decision Support Systems</li>
-    </ul>
+    <div class="research-item">
+
+      <h3>
+        Machine Learning in Healthcare
+      </h3>
+
+      <p>
+        Applying machine learning methods to healthcare
+        data for prediction, risk assessment and
+        decision support.
+      </p>
+
+    </div>
+
+
+    <div class="research-item">
+
+      <h3>
+        Disease Risk Prediction
+      </h3>
+
+      <p>
+        Developing predictive models that identify
+        patterns associated with disease risk
+        using patient and population health data.
+      </p>
+
+    </div>
+
+
+    <div class="research-item">
+
+      <h3>
+        Health Data Analytics
+      </h3>
+
+      <p>
+        Analysing clinical and public-health data
+        to support evidence-based healthcare decisions.
+      </p>
+
+    </div>
+
+
+    <div class="research-item">
+
+      <h3>
+        Predictive Modelling
+      </h3>
+
+      <p>
+        Classification, regression, model evaluation,
+        feature engineering and interpretable prediction.
+      </p>
+
+    </div>
+
+
+    <div class="research-item">
+
+      <h3>
+        Artificial Intelligence
+      </h3>
+
+      <p>
+        Exploring responsible AI methods for
+        real-world decision-support systems.
+      </p>
+
+    </div>
+
+
+    <div class="research-item">
+
+      <h3>
+        Data-Driven Decision Support
+      </h3>
+
+      <p>
+        Using data science and machine learning to
+        support better decisions in practical environments.
+      </p>
+
+    </div>
 
   </div>
 
 
-  <div class="card">
+  <div class="entry">
 
-    <h3>Current Research Direction</h3>
+    <h3>
+      Current Research Direction
+    </h3>
 
-    <br>
+    <div class="meta">
+      Machine Learning | Healthcare | Disease Risk Prediction
+    </div>
 
     <p>
-      I am particularly interested in exploring how machine learning models
-      can analyse patient and public health data to predict disease risk and
-      support better healthcare decision-making.
+      I am particularly interested in exploring how
+      machine learning models can analyse patient
+      and public-health data to predict disease risk
+      and support better healthcare decision-making.
     </p>
 
     <br>
 
     <p>
-      One research area I would like to explore is machine learning-based
-      diabetes risk prediction using patient health data.
+      One research area I am interested in exploring is
+      machine learning-based diabetes risk prediction
+      using patient health data.
     </p>
 
   </div>
@@ -273,27 +572,40 @@
 
   <h2>Education</h2>
 
-  <div class="card">
 
-    <h3>Master of Data Science</h3>
+  <div class="entry">
+
+    <h3>
+      Master of Data Science
+    </h3>
+
+    <div class="meta">
+      Macquarie University | Sydney, Australia | 2025 - Present
+    </div>
 
     <p>
-      Macquarie University, Sydney, Australia
-    </p>
-
-    <p>
-      Currently Enrolled
+      Current postgraduate study in data science,
+      machine learning, statistical learning,
+      data analysis and related computational methods.
     </p>
 
   </div>
 
 
-  <div class="card">
+  <div class="entry">
 
-    <h3>BSc in Computer Science and Engineering (CSE)</h3>
+    <h3>
+      Bachelor of Science in Computer Science and Engineering
+    </h3>
+
+    <div class="meta">
+      American International University-Bangladesh | Completed 2023
+    </div>
 
     <p>
-      American International University-Bangladesh (AIUB)
+      Undergraduate study covering computer science,
+      software development, databases, machine learning,
+      artificial intelligence and data-related methods.
     </p>
 
   </div>
@@ -304,18 +616,33 @@
 <!-- Projects -->
 <section id="projects">
 
-  <h2>Projects & Academic Work</h2>
+  <h2>Research & Academic Projects</h2>
+
 
   <div class="card">
 
-    <h3>Machine Learning and Data Analysis Projects</h3>
+    <span class="status">
+      Current Research Direction
+    </span>
+
+    <h3>
+      Machine Learning-Based Diabetes Risk Prediction
+      Using Patient Health Data
+    </h3>
+
+    <p>
+      A proposed research direction focused on developing
+      and evaluating machine learning models for diabetes
+      risk prediction using structured patient health data.
+    </p>
 
     <br>
 
     <p>
-      As part of my academic studies, I have worked with Python and R for
-      data preprocessing, exploratory data analysis, statistical modelling
-      and machine learning.
+      The project is intended to strengthen research skills
+      in data preprocessing, feature analysis,
+      predictive modelling, model evaluation,
+      interpretation and scientific reporting.
     </p>
 
   </div>
@@ -323,13 +650,14 @@
 
   <div class="card">
 
-    <h3>Data Science Coursework</h3>
-
-    <br>
+    <h3>
+      Machine Learning and Data Analysis Coursework
+    </h3>
 
     <p>
-      My coursework includes practical applications of machine learning,
-      data analysis, predictive modelling, databases and statistical methods.
+      Applied Python and R to data preprocessing,
+      exploratory data analysis, statistical modelling,
+      predictive modelling and machine learning workflows.
     </p>
 
   </div>
@@ -337,12 +665,32 @@
 
   <div class="card">
 
-    <h3>Future Research Project</h3>
-
-    <br>
+    <h3>
+      Data Science Academic Work
+    </h3>
 
     <p>
-      Machine Learning-Based Diabetes Risk Prediction Using Patient Health Data.
+      Coursework and projects involving machine learning,
+      databases, statistical methods,
+      data analysis and data-driven problem solving.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- Publications -->
+<section id="publications">
+
+  <h2>Publications</h2>
+
+  <div class="card">
+
+    <p>
+      I do not currently have peer-reviewed publications.
+      This section will be updated as research outputs
+      become available.
     </p>
 
   </div>
@@ -355,37 +703,76 @@
 
   <h2>Technical Skills</h2>
 
-  <div class="card">
+  <div class="skills-grid">
 
-    <h3>Programming Languages</h3>
 
-    <p>
-      Python, R, SQL, Java, C#, PHP and JavaScript
-    </p>
+    <div class="skill-item">
 
-    <br>
+      <h3>
+        Programming Languages
+      </h3>
 
-    <h3>Data Analysis & Machine Learning</h3>
+      <p>
+        Python, R, SQL, Java, C#, PHP and JavaScript
+      </p>
 
-    <p>
-      Pandas, NumPy and scikit-learn
-    </p>
+    </div>
 
-    <br>
 
-    <h3>Web & Software Development</h3>
+    <div class="skill-item">
 
-    <p>
-      HTML, CSS, .NET and PHP Frameworks
-    </p>
+      <h3>
+        Data Science & Machine Learning
+      </h3>
 
-    <br>
+      <p>
+        Pandas, NumPy, scikit-learn,
+        statistical modelling and model evaluation
+      </p>
 
-    <h3>Tools & Platforms</h3>
+    </div>
 
-    <p>
-      Jupyter Notebook, Git and Microsoft Excel
-    </p>
+
+    <div class="skill-item">
+
+      <h3>
+        Data & Research Tools
+      </h3>
+
+      <p>
+        Jupyter Notebook, Git,
+        Microsoft Excel and database tools
+      </p>
+
+    </div>
+
+
+    <div class="skill-item">
+
+      <h3>
+        Research Skills
+      </h3>
+
+      <p>
+        Literature review, data analysis,
+        reproducible workflows,
+        technical reporting and research methodology
+      </p>
+
+    </div>
+
+
+    <div class="skill-item">
+
+      <h3>
+        Web & Software Development
+      </h3>
+
+      <p>
+        HTML, CSS, PHP, JavaScript and .NET
+      </p>
+
+    </div>
 
   </div>
 
@@ -400,15 +787,17 @@
   <div class="card">
 
     <p>
-      You can download my academic and research CV below.
+      My academic CV summarises my education,
+      research interests, technical skills,
+      academic projects and developing research experience.
     </p>
 
     <a
-      class="btn"
+      class="btn btn-primary"
       href="MD_Sefat_Research_Resume.pdf"
       target="_blank"
     >
-      Download CV
+      Download Academic CV
     </a>
 
   </div>
@@ -421,7 +810,7 @@
 
   <h2>Contact</h2>
 
-  <div class="card">
+  <div class="contact-grid">
 
     <p>
       <strong>Name:</strong>
@@ -434,16 +823,19 @@
     </p>
 
     <p>
-      <strong>Phone:</strong>
-      <a href="tel:+61416119378">
-        +61 416 119 378
+      <strong>Email:</strong>
+      <a href="mailto:tanjimsefat12@gmail.com">
+        tanjimsefat12@gmail.com
       </a>
     </p>
 
     <p>
-      <strong>Email:</strong>
-      <a href="mailto:tanjimsefat12@gmail.com">
-        tanjimsefat12@gmail.com
+      <strong>ORCID:</strong>
+      <a
+        href="https://orcid.org/0009-0001-5060-1096"
+        target="_blank"
+      >
+        0009-0001-5060-1096
       </a>
     </p>
 
@@ -472,6 +864,9 @@
 </section>
 
 
+</main>
+
+
 <!-- Footer -->
 <footer>
 
@@ -480,6 +875,7 @@
   </p>
 
 </footer>
+
 
 </body>
 </html>
